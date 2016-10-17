@@ -21,7 +21,7 @@ function drawScore(pontuacao,nivel,vidas){          //RECEBE OS VALORES QUE APAR
         if (vidas){                                 //VERIFICA SE HA VIDAS 
              for (var i=0; i<vidas;i++){
                 j+=1;
-                context.drawImage(imgVida, window.innerHeight/j, innerHeight/2,80,100); //IMAGEM RECEBIDA DE IMAGENS.JS
+                context.drawImage(imgVida, window.innerHeight/j, innerHeight/2,window.innerWidth/15,window.innerHeight/7); //IMAGEM RECEBIDA DE IMAGENS.JS
             }
             context.font=x/26+"px arial";               
             context.fillText("Belividas: "+vidas,x/60,y/2);
