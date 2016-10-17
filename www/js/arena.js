@@ -41,7 +41,8 @@ function drawArena(mensagem){
 
     //context.fillStyle="#C71585";
     context.fillStyle='black';
-    context.font=x/32+"px arial";
+    //context.font=x/32+"px arial";
+    /*
     context.fillText("Manual ",x/1.19,y/2.5);
     context.font=x/70+"px arial";        
     context.fillText("Movimentação: ",x/1.19,y/2.1);
@@ -49,6 +50,7 @@ function drawArena(mensagem){
     context.fillText("W-A-S-D ",x/1.19,y/1.78);
     context.fillText("P - PAUSE ",x/1.19,y/1.6);
     context.fillText("Espaço/C - Inicia ",x/1.19,y/1.5);  
+    */
     context.font=x/85+"px arial";  
     context.fillText("A cada 10 pontos ",x/1.19,y/1.35);
     context.fillText("+1 Belivida ",x/1.19,y/1.3);

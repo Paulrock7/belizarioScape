@@ -1,7 +1,7 @@
 function init(){                                    //FUNCAO INICIAL DO GAME
     canvas = document.createElement("canvas");		//CRIA ELEMENTO CANVAS
-    canvas.width = window.innerHeight -20;			//LARGURA DO CANVAS DE ACORDO COM TELA
-    canvas.height = window.innerWidth -20;			//ALTURA DO CANVAS
+    canvas.width = window.innerWidth -30;			//LARGURA DO CANVAS DE ACORDO COM TELA
+    canvas.height = window.innerHeight -30;			//ALTURA DO CANVAS
     canvas.id = "my_canvas";						//ID DO CANVAS PARA IDENTIFICACAO NO CSS
 
     document.body.appendChild(canvas);				//INCLUI O CANVAS AO HTML
@@ -33,7 +33,8 @@ function gameOver(){								//FUNCAO CHAMADA AO ACABAREM AS VIDAS
     inicia = false;                        			//*    
 }
 
-function gameloop(){   								//FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
+function gameloop(){   	                            //FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
+    resizeWindow();						
     movimentaInimigo();								//MOVIMENTA O INIMIGO ATRAS DO PERSONAGEM	
     draw();											//CHAMA A FUNCAO PARA DESENHAR OS ELEMENTOS NA TELA 
     detectarColisao();								//VERIFICA COLISAO ENTRE INIMIGO - PERSONAGEM - COMIDA 
@@ -41,6 +42,7 @@ function gameloop(){   								//FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
         requestAnimationFrame(gameloop);			//REQUISITA FRAMES AO NAVEGADOR
     }            
 }   
+
 function pause(){									//PARA O GAME
 	inicia = false; 								//*
 }													//*
