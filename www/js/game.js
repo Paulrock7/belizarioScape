@@ -1,4 +1,4 @@
-function init(){									//FUNCAO INICIAL DO GAME
+function init(){                                    //FUNCAO INICIAL DO GAME
     canvas = document.createElement("canvas");		//CRIA ELEMENTO CANVAS
     canvas.width = window.innerWidth -20;			//LARGURA DO CANVAS DE ACORDO COM TELA
     canvas.height = window.innerHeight -20;			//ALTURA DO CANVAS
@@ -8,16 +8,6 @@ function init(){									//FUNCAO INICIAL DO GAME
     context = canvas.getContext("2d");				//PEGA O CONTEXT 2d DO CANVAS
 
 	telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
-}
-
-function tela (){
-    if(window.innerHeight > window.innerWidth){
-        alert("Favor, use a tela em modo paisagem");
-        tela=false;
-    } else {
-        tela = true;
-    }
-    requestAnimationFrame(tela);    
 }
 
 function draw(){									//TUDO O QUE FOR DESENHADO NA TELA DEVE ESTAR AQUI

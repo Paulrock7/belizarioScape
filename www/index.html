@@ -26,18 +26,25 @@
 
         <!-- VARIAVEIS GLOBAIS E INIT DO GAME -->
         <script type="text/javascript">
-       
+
+        
+        requestAnimationFrame(tela);
+        function tela (){
+            if(window.innerHeight > window.innerWidth){
+                alert("Please use Landscape!");
+                tela = false;
+                requestAnimationFrame(tela);
+            } else {
+                init();
+            }
+        }
+
         var pontuacao=0;      //PONTUACAO INICIAL
         var nivel=1;          //NIVEL INICIAL
         var vidas = 3;        //QUANTIDADE DE VIDAS
-        var inicia = false;   //IMPEDE QUE O GAME INICIE    
-        var tela = false; 
-                        
-        requestAnimationFrame(tela);
-        if (tela==true){
-            init();
-        }
-                 
+        var inicia = false;   //IMPEDE QUE O GAME INICIE                     
+        var tela = false;
+            
      
         </script>      
     </body>
