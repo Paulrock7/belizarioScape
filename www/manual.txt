@@ -1,0 +1,16 @@
+No game voce esta na pele de um jovem robo que precisa fugir do seu maior inimigo, o professor Belizario
+
+Use as setas de direcionais ou WASD para controlar o robo
+
+O objetivo do game e fugir do professor e juntar o maximo de pilhas possivel.
+
+
+P - Pausa
+
+Espaço e C - Continua o game
+Espaço - Inicia game  
+
+W ou seta para cima 	- Movimenta para CIMA
+A ou seta para esquerda - Movimenta para ESQUERDA
+S ou seta para baixo 	- Movimenta para BAIXO
+D ou seta para Direita  - Movimenta para DIREITA 
