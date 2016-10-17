@@ -10,6 +10,15 @@ function init(){									//FUNCAO INICIAL DO GAME
 	telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
 }
 
+function tela (){
+    if(window.innerHeight > window.innerWidth){
+        alert("Favor, use a tela em modo paisagem");
+        tela=false;
+    } else {
+        tela = true;
+    }
+    requestAnimationFrame(tela);    
+}
 
 function draw(){									//TUDO O QUE FOR DESENHADO NA TELA DEVE ESTAR AQUI
     context.clearRect(0,0,window.innerWidth,window.innerHeight); //LIMPA O QUADRO DO CANVAS
