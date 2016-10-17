@@ -26,18 +26,14 @@
 
         <!-- VARIAVEIS GLOBAIS E INIT DO GAME -->
         <script type="text/javascript">
-
-        tela();
+        
+        init();
         function tela (){            
-
             if(window.innerHeight > window.innerWidth){
                 alert("Please use Landscape!");
                 tela = false;
                 requestAnimationFrame(tela);
-            } else if (window.innerHeight < window.innerWidth){
-                tela == true;
-                init();
-            }        
+            }   
         }
 
         var pontuacao=0;      //PONTUACAO INICIAL
