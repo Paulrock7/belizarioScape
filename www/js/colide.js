@@ -1,5 +1,5 @@
 function detectarColisao(){        
-    if(((xInimigo+70)>xPersonagem&&xInimigo<(xPersonagem+80))&&((yInimigo+90)>yPersonagem&&yInimigo<(yPersonagem+90))){ 
+    if(((xInimigo+window.innerWidth/20)>xPersonagem&&xInimigo<(xPersonagem+window.innerWidth/18))&&((yInimigo+window.innerHeight/8.5)>yPersonagem&&yInimigo<(yPersonagem+window.innerHeight/8.5))){ 
         vidas -=1;
         if (vidas == 0){
             gameOver();
@@ -9,7 +9,7 @@ function detectarColisao(){
         xPersonagem=window.innerWidth/1.34,yPersonagem=window.innerHeight/1.3;
     } 
    
-    if(((xPersonagem+70)>xComida&&xPersonagem<(xComida+80))&&((yPersonagem+90)>yComida&&yPersonagem<(yComida+90))){
+    if(((xPersonagem+window.innerWidth/20)>xComida&&xPersonagem<(xComida+window.innerWidth/18))&&((yPersonagem+window.innerHeight/8.5)>yComida&&yPersonagem<(yComida+window.innerHeight/8.5))){
         var x = window.innerWidth;
         var y = window.innerHeight-20;
         pontuacao +=1;
