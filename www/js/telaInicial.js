@@ -1,6 +1,7 @@
 function telaInicial(){	
 	drawArena("BELIZARIO'S SCAPE");
 	context.fillStyle="#C71585";
+
 	context.font=window.innerWidth/25+"px arial";
 	context.fillText("Clique Aqui para iniciar o Game",window.innerWidth/5,window.innerHeight/10);
 	context.fillStyle="black"; 
