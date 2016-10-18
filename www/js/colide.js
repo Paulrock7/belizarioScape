@@ -19,7 +19,7 @@ function detectarColisao(){
         }
 
         if (pontuacao%3==0){
-        	velocidadeInimigo += 0.3;
+        	velocidadeInimigo += 0.1;
         	nivel+=1;
         }
         

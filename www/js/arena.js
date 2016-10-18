@@ -62,9 +62,8 @@ function drawArena(mensagem){
     } else if(carac>19&&carac<=30){
         context.font=x/18+"px arial";
         context.fillText("PERDEU!!!",x/4,y/3);
-        context.font=x/33+"px arial";
-        context.fillStyle="black";
-        context.fillText("Clique Aqui para reiniciar o Game",window.innerWidth/5,window.innerHeight/10);
+        context.font=x/33+"px arial";        
+        context.fillText("Clique Aqui para reiniciar o Game",window.innerWidth/4,window.innerHeight/10);
     }
     
     context.fillText(mensagem,x/4,y/1.8);        
