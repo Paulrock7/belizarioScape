@@ -1,6 +1,6 @@
 var xInimigo=window.innerWidth/4;
 var yInimigo=window.innerHeight/4;
-var velocidadeInimigo = 1;
+var velocidadeInimigo = 0.7;
 
 function movimentaInimigo(){
     if(xInimigo<xPersonagem) { 

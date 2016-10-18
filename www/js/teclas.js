@@ -13,16 +13,16 @@ window.addEventListener('load', function(){ // on page load
             start();        
         }                
         //PLAYER 
-        if(((x<xTela/11&&y<yTela/1.32&&y>yTela/1.5)) && xPersonagem>xTela/4.1 && inicia == true) { 
+        if(((x<xTela/11.2&&y<yTela/1.37&&y>yTela/1.8)) && xPersonagem>xTela/4.1 && inicia == true) { 
             xPersonagem -= velocidade; //move para esquerda     
         }
-        if(((x>xTela/7&&x<xTela/4&&y<yTela/1.32&&y>yTela/1.5)) && xPersonagem<x/1.1+xTela/1.92 && inicia == true) {
+        if(((x>xTela/6.8&&x<xTela/3.8&&y<yTela/1.35&&y>yTela/1.8)) && xPersonagem<x/1.1+xTela/1.92 && inicia == true) {
             xPersonagem += velocidade; //move para direita
         }
-        if((y>yTela/2&&y<yTela/1.6&&x<xTela/7&&x>xTela/11) && yPersonagem>yTela/5 && inicia == true) {
+        if((y>yTela/2.5&&y<yTela/1.5&&x<xTela/6.7&&x>xTela/10.8) && yPersonagem>yTela/5 && inicia == true) {
             yPersonagem -= velocidade; //move para cima
         }
-        if((y>yTela/1.3&&y<yTela&&x<xTela/7&&x>xTela/11) && yPersonagem<yTela/1.3 && inicia == true) {
+        if((y>yTela/1.5&&y<yTela&&x<xTela/6.7&&x>xTela/10.8) && yPersonagem<yTela/1.3 && inicia == true) {
             yPersonagem += velocidade; //move para baixo 
         }
     
@@ -40,7 +40,7 @@ function pressionaTecla(e) {
         start();        
     }                
     //PLAYER 
-    if((e.keyCode == 37 || e.keyCode == 65) && xPersonagem>xTela/4.1 && inicia == true) { 
+    if((e.keyCode == 37 || e.keyCode == 65) && xPersonagem>x/4.1 && inicia == true) { 
         xPersonagem -= velocidade; //move para esquerda     
     }
     if((e.keyCode == 39 || e.keyCode == 68) && xPersonagem<x/4.3+x/1.92 && inicia == true) {
