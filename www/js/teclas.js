@@ -16,13 +16,13 @@ window.addEventListener('load', function(){ // on page load
         if(((x<xTela/11&&y<yTela/1.32&&y>yTela/1.5)) && xPersonagem>xTela/4.1 && inicia == true) { 
             xPersonagem -= velocidade; //move para esquerda     
         }
-        if(x>xTela/2 && xPersonagem<x/4.3+xTela/1.92 && inicia == true) {
+        if(((x>xTela/7&&x<xTela/4&&y<yTela/1.32&&y>yTela/1.5)) && xPersonagem<x/1.1+xTela/1.92 && inicia == true) {
             xPersonagem += velocidade; //move para direita
         }
-        if(y<yTela/2 && yPersonagem>yTela/5 && inicia == true) {
+        if((y>yTela/2&&y<yTela/1.6&&x<xTela/7&&x>xTela/11) && yPersonagem>yTela/5 && inicia == true) {
             yPersonagem -= velocidade; //move para cima
         }
-        if(y>yTela/2 && yPersonagem<yTela/1.3 && inicia == true) {
+        if((y>yTela/1.3&&y<yTela&&x<xTela/7&&x>xTela/11) && yPersonagem<yTela/1.3 && inicia == true) {
             yPersonagem += velocidade; //move para baixo 
         }
     
