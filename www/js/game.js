@@ -36,6 +36,7 @@ function gameOver(){								//FUNCAO CHAMADA AO ACABAREM AS VIDAS
 function gameloop(){   	                            //FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
     resizeWindow();						
    // movimentaInimigo();								//MOVIMENTA O INIMIGO ATRAS DO PERSONAGEM	
+    pixelMap(50);
     draw();											//CHAMA A FUNCAO PARA DESENHAR OS ELEMENTOS NA TELA 
     detectarColisao();								//VERIFICA COLISAO ENTRE INIMIGO - PERSONAGEM - COMIDA 
     if (inicia==true){								//VERIFICA SE O GAME ESTA EM PAUSA OU NAO RECEBEU "PLAY"

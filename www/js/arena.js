@@ -51,9 +51,12 @@ function drawArena(mensagem){
     context.fillText("P - PAUSE ",x/1.19,y/1.6);
     context.fillText("Espaço/C - Inicia ",x/1.19,y/1.5);  
     */
-
-    
     context.restore();
+
+    context.save();
+        context.drawImage(imgSetas,x/x,y/2,x/4.6,y/2.4);
+    context.restore();
+
     if (carac<19) {
         context.font=x/18+"px arial";
     } else if(carac>19&&carac<=30){
