@@ -1,6 +1,6 @@
 function detectarColisao(){        
     if(((xInimigo+window.innerWidth/20)>xPersonagem&&xInimigo<(xPersonagem+window.innerWidth/18))&&((yInimigo+window.innerHeight/8.5)>yPersonagem&&yInimigo<(yPersonagem+window.innerHeight/8.5))){ 
-        vidas -=1;
+        vidas -=1;        
         if (vidas == 0){
             gameOver();
         }

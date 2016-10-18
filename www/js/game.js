@@ -1,7 +1,7 @@
 function init(){                                    //FUNCAO INICIAL DO GAME
     canvas = document.createElement("canvas");		//CRIA ELEMENTO CANVAS
-    canvas.width = window.innerWidth -30;			//LARGURA DO CANVAS DE ACORDO COM TELA
-    canvas.height = window.innerHeight -30;			//ALTURA DO CANVAS
+    canvas.width = window.innerWidth;			//LARGURA DO CANVAS DE ACORDO COM TELA
+    canvas.height = window.innerHeight;			//ALTURA DO CANVAS
     canvas.id = "my_canvas";						//ID DO CANVAS PARA IDENTIFICACAO NO CSS
 
     document.body.appendChild(canvas);				//INCLUI O CANVAS AO HTML

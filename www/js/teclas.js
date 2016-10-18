@@ -13,7 +13,7 @@ window.addEventListener('load', function(){ // on page load
             start();        
         }                
         //PLAYER 
-        if(((x<xTela/11.2&&y<yTela/1.37&&y>yTela/1.8)) && xPersonagem>xTela/4.1 && inicia == true) { 
+        if(((x<xTela/11.2&&y<yTela/1.37&&y>yTela/1.8)) && xPersonagem>xTela/4.1 && inicia == true) {     
             xPersonagem -= velocidade; //move para esquerda     
         }
         if(((x>xTela/6.8&&x<xTela/3.8&&y<yTela/1.35&&y>yTela/1.8)) && xPersonagem<x/1.1+xTela/1.92 && inicia == true) {
