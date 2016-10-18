@@ -51,3 +51,10 @@ function start(){									//RESTAURA DO GAME A PARTIR DA ULTIMA POSICAO
 	inicia = true;									//*
 	requestAnimationFrame(gameloop);				//*
 }
+
+function resizeWindow(){
+    WIDTH = window.innerWidth;
+    HEIGHT = window.innerHeight;
+    canvas.width = WIDTH;
+    canvas.height = HEIGHT;
+}
