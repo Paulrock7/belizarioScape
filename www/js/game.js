@@ -7,7 +7,8 @@ function init(){                                    //FUNCAO INICIAL DO GAME
     document.body.appendChild(canvas);				//INCLUI O CANVAS AO HTML
     context = canvas.getContext("2d");				//PEGA O CONTEXT 2d DO CANVAS
 
-	telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
+drawArena("BELIZARIO'S SCAPE");
+	//telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
 }
 
 function draw(){									//TUDO O QUE FOR DESENHADO NA TELA DEVE ESTAR AQUI

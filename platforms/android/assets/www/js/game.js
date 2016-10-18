@@ -1,15 +1,14 @@
-function init(){									//FUNCAO INICIAL DO GAME
+function init(){                                    //FUNCAO INICIAL DO GAME
     canvas = document.createElement("canvas");		//CRIA ELEMENTO CANVAS
-    canvas.width = window.innerWidth -20;			//LARGURA DO CANVAS DE ACORDO COM TELA
-    canvas.height = window.innerHeight -20;			//ALTURA DO CANVAS
+    canvas.width = window.innerWidth;			//LARGURA DO CANVAS DE ACORDO COM TELA
+    canvas.height = window.innerHeight;			//ALTURA DO CANVAS
     canvas.id = "my_canvas";						//ID DO CANVAS PARA IDENTIFICACAO NO CSS
 
     document.body.appendChild(canvas);				//INCLUI O CANVAS AO HTML
     context = canvas.getContext("2d");				//PEGA O CONTEXT 2d DO CANVAS
 
-	telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
+	//telaInicial(); 									//CHAMA TELA INICIAL PARA O JOGADOR DAR PLAY
 }
-
 
 function draw(){									//TUDO O QUE FOR DESENHADO NA TELA DEVE ESTAR AQUI
     context.clearRect(0,0,window.innerWidth,window.innerHeight); //LIMPA O QUADRO DO CANVAS
@@ -34,14 +33,16 @@ function gameOver(){								//FUNCAO CHAMADA AO ACABAREM AS VIDAS
     inicia = false;                        			//*    
 }
 
-function gameloop(){   								//FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
-    movimentaInimigo();								//MOVIMENTA O INIMIGO ATRAS DO PERSONAGEM	
+function gameloop(){   	                            //FUNCAO QUE RODA PARA CHAMAR AS OUTRAS
+    resizeWindow();						
+    movimentaInimigo();								//MOVIMENTA O INIMIGO ATRAS DO PERSONAGEM	    
     draw();											//CHAMA A FUNCAO PARA DESENHAR OS ELEMENTOS NA TELA 
     detectarColisao();								//VERIFICA COLISAO ENTRE INIMIGO - PERSONAGEM - COMIDA 
     if (inicia==true){								//VERIFICA SE O GAME ESTA EM PAUSA OU NAO RECEBEU "PLAY"
         requestAnimationFrame(gameloop);			//REQUISITA FRAMES AO NAVEGADOR
     }            
 }   
+
 function pause(){									//PARA O GAME
 	inicia = false; 								//*
 }													//*

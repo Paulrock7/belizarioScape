@@ -82,14 +82,16 @@
     <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     <allow-intent href="market:*" />
-    <name>Hello World</name>
+    <name>Belizario's Scape</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Game para Sistemas de informação FIAP 2016 
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
     <content src="index.html" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="landscape" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <icon src="icon.png" />

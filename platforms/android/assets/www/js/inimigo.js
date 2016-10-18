@@ -1,6 +1,6 @@
 var xInimigo=window.innerWidth/4;
 var yInimigo=window.innerHeight/4;
-var velocidadeInimigo = 1;
+var velocidadeInimigo = 0.4;
 
 function movimentaInimigo(){
     if(xInimigo<xPersonagem) { 
@@ -27,7 +27,7 @@ function drawInimigo(context,x,y,color){
     //context.fillStyle=color;
     //context.beginPath();
     //context.fillRect(x,y,window.innerWidth/30,window.innerHeight/15); 
-    context.drawImage(imgInimigo, x, y,70,90);
+    context.drawImage(imgInimigo, x, y,window.innerWidth/20,window.innerHeight/8.5);
     context.restore();
 
 }
